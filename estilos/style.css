@@ -66,7 +66,7 @@ nav ul :last-child :hover {
 /* RODAPÉ */
 footer {
     background-color:#dae9e2;
-    height: 160px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;

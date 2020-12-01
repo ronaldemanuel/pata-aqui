@@ -1,0 +1,65 @@
+.op-pet {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+.op-pet a,
+.op-pet li{
+    color: #5c5c5c;
+    text-decoration: none;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+.op-pet li :hover {
+    text-decoration: underline;
+}
+
+.list-pets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: auto;
+}
+
+.pet {
+    margin: 20px;
+    cursor: pointer;
+}
+
+.pet img {
+    width: 250px;
+    height: 250px;
+}
+
+.text {
+    color: black;
+    position: absolute;
+    margin-top: -80px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff1e493;
+    width: 250px;
+}
+
+.but-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.but-pag {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
