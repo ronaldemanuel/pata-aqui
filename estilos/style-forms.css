@@ -8,10 +8,9 @@
     border-radius: 50px;
 	width: 900px;
 	height: 600px;
-	border: 2px solid rgb(71, 71, 71);
+	border: 2px solid #474747;
     text-align: center;
-    background-color: hsl(29, 100%, 95%);
-    padding: 20px 20px;
+    padding: 20px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -25,7 +24,7 @@
     align-items: center;
     text-transform: uppercase;
     border-radius: 50px;
-    background-color:rgb(71, 71, 71);
+    background-color:#474747;
     width: 200px;
     height: 30px;
     padding-top: 5px;
