@@ -1,0 +1,41 @@
+.cad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+	width: 350px;
+	height: 350px;
+	border: 2px solid rgb(71, 71, 71);
+    text-align: center;
+    background-color: hsl(29, 100%, 95%);
+    padding: 20px 20px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.form input{
+    border: .5px solid #525252;
+    outline:none;
+    width: 300px;
+    height:30px;
+    color:#000;
+    background:#fff;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-left: 40px;
+}
+.tit{
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color:rgb(71, 71, 71);
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    margin-top: -345px;
+   margin-left: 420px;
+    position: absolute;
+}
