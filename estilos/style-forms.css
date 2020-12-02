@@ -36,12 +36,6 @@
 }
 
 /* ESTILO DOS INPUTS */
-
-.form input{
-    margin-bottom:21px;
-    margin-right: 50px;
-}
-
 .form input{
     border: .5px solid #525252;
     outline:none;
@@ -50,6 +44,8 @@
     background:#fff;
     border-radius: 20px;
     padding-left: 10px;
+    margin-bottom:21px;
+    margin-right: 50px;
 }
 
 .form input[type="date"]{
