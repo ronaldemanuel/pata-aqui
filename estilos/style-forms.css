@@ -43,7 +43,7 @@
 }
 
 .form input{
-    border: none;
+    border: .5px solid #525252;
     outline:none;
     height:30px;
     color:#000;
@@ -63,7 +63,6 @@
 
 /* BOTÃO */
 .btn{
-
     border-radius: 15px;
     text-transform: uppercase;
     color: black;
