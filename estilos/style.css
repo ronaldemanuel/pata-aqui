@@ -31,7 +31,7 @@ header {
 }
 
 nav ul {
-    margin: 25px;
+    margin: 50px;
 }
 
 nav a {
@@ -63,7 +63,7 @@ nav ul :last-child :hover {
 
 /*LOGO*/
 .logo {
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 /* RODAPÉ */
