@@ -1,5 +1,4 @@
 .cad-pet{
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,8 +21,9 @@
     margin-bottom:21px;
     margin-right: 50px;
 }
+
 .form input[type="text"]{
-	border:none;
+	border: none;
 	outline:none;
 	height:30px;
 	color:#000;
@@ -93,13 +93,13 @@
     padding-top: 5px;
     text-align: center;
     color: white;
-    margin-top: 15px;
-    margin-left: 300px;
+    margin-top: -600px;
+    margin-right: 400px;
     position: absolute;
-
 }
 
 .imag{
    margin-left: 50px;
    margin-bottom: 100px;
+   cursor: pointer;
 }
