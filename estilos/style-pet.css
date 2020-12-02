@@ -1,101 +1,22 @@
-.cad-pet{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    border-radius: 50px;
-	width: 900px;
-	height: 600px;
-	border: 2px solid rgb(71, 71, 71);
-	align-items: center;
-    text-align: center;
-	background-color: hsl(29, 100%, 95%);
-	box-sizing: border-box;
-    padding: 20px 20px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
+/*Adaptações do design geral, para a tela de cadastro de pet*/
+
+.form input[type="radio"] {
+    margin-left: 20px;
 }
 
-.form input{
-    margin-bottom:21px;
-    margin-right: 50px;
-}
-
-.form input[type="text"]{
-	border: none;
-	outline:none;
-	height:30px;
-	color:#000;
-	background:#fff;
-	border-radius: 20px;
-    transition:0.2s;
-    padding-left: 10px;
-
-}
-.form input[type="date"]{
-	border:none;
-	outline:none;
-	height:30px;
-	color:rgb(82, 82, 82);
-	background:#fff;
-	border-radius: 20px;
-    transition:0.2s;
-    padding-left: 10px;
-
-}
-.form input[type="radio"]{
-        margin-left: 20px;
-       
-}
-
-    
-.btn{
-        margin-top: 60px;
-        margin-right:350px;
-        border-radius: 15px;
-        text-transform: uppercase;
-        color: black;
-        font-size: 10px;
-        padding: 10px 50px;
-        cursor: pointer;
-        font-weight: bold;
-}
-.btn{
-	background-color: #ffe1f0;
-	border: 1px solid black;
-}
-.btn:hover{
-    background-color:  transparent;
-    color:black;
-    }
 .formz{
-
     display: flex;
-    flex-direction: column;
-        
+    flex-direction: column;  
  }
+
 .flexi{
     display: flex;
     flex-direction: row;
-        
-   
 }
 
-.tit{
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    border-radius: 50px;
-    background-color:rgb(71, 71, 71);
-    width: 200px;
-    height: 30px;
-    padding-top: 5px;
-    text-align: center;
-    color: white;
-    margin-top: -600px;
-    margin-right: 400px;
-    position: absolute;
+.btn {
+    margin-top: 60px;
+    margin-right:350px;
 }
 
 .imag{

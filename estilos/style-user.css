@@ -1,0 +1,40 @@
+/*Adaptações do design geral, para a tela de cadastro de usuário*/
+
+.form {
+    width: 80%;
+}
+
+.form input {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+#nome-user,
+#sobrNome-user {
+    width: 35%;
+}
+
+#nome-user {
+    margin-right: 3%;
+}
+
+#cpf-user {
+    width: 35%;
+    margin-right: 2%;
+}
+
+.form label[for="masc"] {
+    margin-left: 1%;
+}
+
+#masc {
+    margin-right: 3%;
+}
+
+.form-group {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+

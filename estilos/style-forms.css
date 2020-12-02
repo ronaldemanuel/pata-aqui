@@ -1,0 +1,82 @@
+/*Design geral dos formulários*/
+
+/* ESTILO DO CONTAINER */
+.cad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+	width: 900px;
+	height: 600px;
+	border: 2px solid rgb(71, 71, 71);
+    text-align: center;
+    background-color: hsl(29, 100%, 95%);
+    padding: 20px 20px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+
+/* ESTILO DO TÍTULO */
+.tit{
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color:rgb(71, 71, 71);
+    width: 200px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+    margin-top: -600px;
+    margin-right: 500px;
+    position: absolute;
+}
+
+/* ESTILO DOS INPUTS */
+
+.form input{
+    margin-bottom:21px;
+    margin-right: 50px;
+}
+
+.form input{
+    border: none;
+    outline:none;
+    height:30px;
+    color:#000;
+    background:#fff;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.form input[type="date"]{
+	color:rgb(82, 82, 82);
+}
+
+.form input[type="radio"]{
+    height: auto;
+    width: auto;
+}
+
+/* BOTÃO */
+.btn{
+
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 12px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.btn{
+	background-color: #ffe1f0;
+	border: 1px solid black;
+}
+.btn:hover{
+    background-color:  transparent;
+    color:black;
+    }
