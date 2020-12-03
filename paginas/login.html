@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pata Aqui - Faça Login</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto+Slab family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="../estilos/style-forms.css">
-    <link rel="stylesheet" href="../estilos/stylogin.css">
+    <link rel="stylesheet" href="../estilos/style-login.css">
 
 </head>
 
@@ -25,37 +26,35 @@
         <nav>
             <ul class="lista-flex">
                 <li><a href="../index.html">Home</a></li>
-                <li><a id="pag-atual" href="sobre.html">Sobre nós</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a id="pag-atual" href="login.html">Login</a></li>
                 <li><a class="bot-cad" href="cad-u.html">Cadastre-se</a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="cad">
-        <div class="tit">
-            Faça Login 
+    <article class="login">
+        <div class="cad">
+            <div class="tit">
+                Faça Login 
+            </div>
+            <form class="form">
+                <!-- imagem user -->
+                <div class="imaguser">
+                    <img src="../imagens/imagem-login/user.png" class="user" width="120" height="" alt="">
+                </div>
+    
+                <!-- informações basicas -->
+                <div class="formz">
+                    <input type="email" placeholder="Email:">
+                    <input type="password" placeholder="Senha:">
+                </div>
+    
+                <!-- botão -->
+                <button class="btn" type="submit">Entrar</button>
+    
+            </form>
         </div>
-        <form class="form">
-            <!-- imagem user -->
-            <div class="imaguser">
-                <img src="../imagens/imagem-login/user.png" class="user" width="120" height="" alt="">
-            </div>
-
-            <!-- informações basicas -->
-            <div class="formz">
-                <input type="email" placeholder="Email:">
-                <input type="password" placeholder="Senha:">
-            </div>
-
-            <!-- botão -->
-            <button class="btn" type="submit">Entrar</button>
-
-        </form>
-
-    </div>
-
-
+    </article>
 
     <footer class="footer-bg">
         <div class="rodape">

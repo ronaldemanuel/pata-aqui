@@ -1,5 +1,11 @@
+.login {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
 .cad {
-    margin-top: 100px;
+    margin-top: 3vh;
     width: 350px;
 	height: 350px; 
 }
@@ -16,6 +22,7 @@
 
 footer {
     position: absolute;
+    top: calc(100% - 100px);
     bottom: 0;
     width: 100%;
 }

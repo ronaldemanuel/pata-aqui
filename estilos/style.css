@@ -15,7 +15,7 @@ body {
 /* CABEÇALHO */
 header {
     background-color: #dae9e2;
-    height: 160px;
+    height: 140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +69,7 @@ nav ul :last-child :hover {
 /* RODAPÉ */
 footer {
     background-color:#dae9e2;
-    height: 140px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
