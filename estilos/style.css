@@ -13,10 +13,11 @@ body {
 }
 
 /* CABEÇALHO */
-header {
+.header-bg {
     background-color: #dae9e2;
     height: 140px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
@@ -28,6 +29,12 @@ header {
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto Slab', serif;
+}
+
+@media (max-width: 800px) {
+    .header-bg {
+        justify-content: center;
+    }
 }
 
 nav ul {
@@ -64,6 +71,8 @@ nav ul :last-child :hover {
 /*LOGO*/
 .logo {
     margin-left: 50px;
+    width: 18vw;
+    min-width: 200px;
 }
 
 /* RODAPÉ */
