@@ -11,7 +11,8 @@
 }
 
 #nome-user,
-#sobrNome-user {
+#sobrNome-user,
+#cpf-user {
     width: 35%;
 }
 
@@ -20,9 +21,10 @@
 }
 
 #cpf-user {
-    width: 35%;
-    margin-right: 2%;
+    margin: 0;
+    margin-bottom: 21px;
 }
+
 
 .form label[for="masc"] {
     margin-left: 1%;
@@ -37,4 +39,36 @@
     width: 100%;
 }
 
+/*RESPONSIVIDADE*/
+@media (max-width: 1000px) {
+    .cad {
+        width: 90vw;
+    }
 
+    .tit {
+        margin-right: 50vw;
+    }
+
+    #nome-user,
+    #sobrNome-user,
+    #cpf-user{
+        width: 100%;
+    }
+
+    #nome-user,
+    #cpf-user {
+        margin-bottom: 21px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .cad {
+        padding: 5px;
+    }
+
+    .tit {
+        margin-right: 0;
+    }
+
+}
