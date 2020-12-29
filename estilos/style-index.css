@@ -32,8 +32,11 @@
 .pet {
     margin: 20px;
     cursor: pointer;
+    border-radius: 45px;
+    box-shadow: 7px 7px 10px #444;
 }
 
+.pet,
 .pet img {
     width: 220px;
     height: 220px;
