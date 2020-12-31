@@ -1,13 +1,12 @@
 .main-txt {
-    width: 50vw;
+    width: 700px;
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    padding: 50px;
     border: 2px solid rgb(71, 71, 71);
     border-radius: 50px;
-    padding: 50px;
 }
 
 .main-txt h1 {
@@ -32,4 +31,29 @@
     margin: auto;
     margin-top: 20px;
     width: 600px;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 900px) {
+    .main-txt p {
+        font-size: 12pt;
+    }
+}
+
+@media (max-width: 770px) {
+    .main-txt {
+        width: 83vw;
+        padding: 20px;
+    }
+
+    .main-txt h1,
+    .main-txt h2,
+    .main-txt p,
+    .main-txt img {
+        width: 70vw;
+    } 
+
+    .main-txt h2 {
+        font-size: 14pt;
+    }
 }

@@ -21,12 +21,14 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
+    width: 100%;
 }
 
 /* MENU */
 .lista-flex {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font-family: 'Roboto Slab', serif;
 }
@@ -38,7 +40,7 @@ body {
 }
 
 nav ul {
-    margin: 50px;
+    margin-left: 50px;
 }
 
 nav a {
@@ -83,4 +85,37 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 1050px) {
+    header {
+        justify-content: center;
+    }
+  
+    .logo {
+        width: 23vw;
+        min-width: 150px;
+    }
+
+    nav ul {
+        margin-top: -10px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    nav ul {
+        margin: 0;
+    }
+    nav a {
+        margin: 0;
+        font-size: 3.8vw;
+    }
+
 }
