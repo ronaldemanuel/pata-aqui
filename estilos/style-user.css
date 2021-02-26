@@ -1,7 +1,45 @@
 /*Adaptações do design geral, para a tela de cadastro de usuário*/
+/*GRID LAYOUT*/
+#nome-user {
+    grid-area: nome;
+}
+
+#sobrNome-user {
+    grid-area: sobrNome;
+}
+
+#cpf-user {
+    grid-area: cpf;
+}
+
+.sexo {
+    grid-area: sexo;
+}
+
+#email {
+    grid-area: email;
+}
+
+#senha {
+    grid-area: senha;
+}
+
+#conf-senha {
+    grid-area: conf-senha;
+}
 
 .form {
     width: 80%;
+    max-width: 500px;
+    display: grid;
+    grid-template-areas: 
+        "nome nome"
+        "sobrNome sobrNome"
+        "cpf sexo"
+        "email email"
+        "senha senha"
+        "conf-senha conf-senha";
+    grid-gap: 15px;
 }
 
 .form input {
@@ -10,33 +48,8 @@
     max-width: 500px;
 }
 
-#nome-user,
-#sobrNome-user,
-#cpf-user {
-    width: 35%;
-}
-
-#nome-user {
-    margin-right: 3%;
-}
-
-#cpf-user {
-    margin: 0;
-    margin-bottom: 21px;
-}
-
-
-.form label[for="masc"] {
-    margin-left: 1%;
-}
-
-#masc {
-    margin-right: 3%;
-}
-
-.form-group {
-    margin-bottom: 30px;
-    width: 100%;
+input[type="radio"] {
+    margin-right: 0;
 }
 
 /*RESPONSIVIDADE*/
@@ -48,18 +61,6 @@
     .tit {
         margin-right: 50vw;
     }
-
-    #nome-user,
-    #sobrNome-user,
-    #cpf-user{
-        width: 100%;
-    }
-
-    #nome-user,
-    #cpf-user {
-        margin-bottom: 21px;
-        margin-right: 0;
-    }
 }
 
 @media (max-width: 650px) {
@@ -70,5 +71,4 @@
     .tit {
         margin-right: 0;
     }
-
 }

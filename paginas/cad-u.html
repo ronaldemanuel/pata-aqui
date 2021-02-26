@@ -33,32 +33,20 @@
             Cadastre-se
         </div>
         <form action="" class="form">
-            <div class="form-group nome ">
-                <input type="text" placeholder="Nome:" id="nome-user" class="input-metade">
-                <input type="text" placeholder="Sobrenome:" id="sobrNome-user" class="input-metade">
+            <input type="text" placeholder="Nome:" id="nome-user" class="input-metade">
+            <input type="text" placeholder="Sobrenome:" id="sobrNome-user" class="input-metade">
+            <input type="text" placeholder="CPF:" id="cpf-user">
+            <div class="sexo">
+                Sexo:
+                <label for="masc">Masculino</label> 
+                <input type="radio" name="sexo" id="masc">
+            
+                <label for="fem">Feminino</label> 
+                <input type="radio" name="sexo" id="fem">
             </div>
-
-            <div class="form-group id">
-                <input type="text" placeholder="CPF:" id="cpf-user">
-                <div class="sexo">
-                    Sexo:
-                    <label for="masc">Masculino</label> 
-                    <input type="radio" name="sexo" id="masc">
-                
-                    <label for="fem">Feminino</label> 
-                    <input type="radio" name="sexo" id="fem">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <input type="email" name="email" placeholder="E-mail" id="email">
-            </div>
-            <div class="form-group">
-                <input type="password" name="senha" placeholder="Senha" id="senha">
-            </div>
-            <div class="form-group">
-                <input type="password" name="conf-senha" placeholder="Confirme a senha" id="conf-senha">
-            </div>
+            <input type="email" name="email" placeholder="E-mail" id="email">
+            <input type="password" name="senha" placeholder="Senha" id="senha">
+            <input type="password" name="conf-senha" placeholder="Confirme a senha" id="conf-senha">
 
             <button class="btn" type="submit">Enviar</button>
         </form>
