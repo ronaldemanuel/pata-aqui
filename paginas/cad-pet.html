@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../estilos/style-forms.css">
 </head>
 
-<body>
+<body onload="ver">
     <header class="header-bg">
         <h1>
             <a href="../index.html">
@@ -40,8 +40,9 @@
         <form class="form">
             <!-- informações basicas -->
             <div class="formz">
-                <input type="text" placeholder="Nome:">
-                <input type="text" placeholder="Raça:">
+                <input type="text" placeholder="Nome:" id="nome">
+                <input type="text" placeholder="Raça:" id="raca">
+                <div id="sEgg"></div>
             </div>
             <!-- sexo do animal -->
             <div class="flexi">
@@ -53,16 +54,16 @@
 
             <!-- idade -->
             <div class="flexi">
-                <input type="date" placeholder="Data de Nascimento">
+                <input type="date" placeholder="Data de Nascimento" id="dt-nasc">
                 <label for="desc">Desconhecida</label>
                 <input type="radio" name="desc" id="desc">
             </div>
 
             <!-- vacina -->
             <div class="flexi">
-                <label for="vac">Vacinado:</label>
+                <label for="vac">Vacinado: </label>
                 <label for="sin">Sim</label>
-                <input type="radio" name="opc" id="sin">
+                <input type="radio" name="opc" id="sin" onchange="insereCampo()">
                 <label for="nom">Não</label>
                 <input type="radio" name="opc" id="nom">
                 <label for="nnsei">Não sei informar!</label>
@@ -71,7 +72,7 @@
 
 
             <!-- botão -->
-            <button class="btn" type="submit">Enviar</button>
+            <button class="btn" type="submit" onclick="validar()">Enviar</button>
 
         </form>
 
@@ -87,6 +88,7 @@
             <p>Copyright &copy; OSF Development <br> <small>Elaine & Ronald & Vívia</small></p>
         </div>
     </footer>
+    <script src="../scripts/cad-pet.js"></script>
 </body>
 
 </html>
