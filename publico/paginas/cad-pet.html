@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pata Aqui - Pet</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto+Slab family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/style-pet.css">
+    <link rel="stylesheet" href="../estilos/style-forms.css">
+</head>
+
+<body onload="ver">
+    <header class="header-bg">
+        <h1>
+            <a href="../index.html">
+                <img class="logo" src="../imagens/logo.png" alt="Pata Aqui">
+            </a>
+        </h1>
+        <nav>
+            <ul class="lista-flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre">Sobre nós</a></li>
+                <li><a href="login">Login</a></li>
+                <li><a class="bot-cad" href="cadastro-usuario">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="cad">
+        <!-- title -->
+        <div class="tit">
+            Cadastre o pet
+        </div>
+        <form class="form">
+            <!-- informações basicas -->
+            <div class="formz">
+                <input type="text" placeholder="Nome:" id="nome">
+                <input type="text" placeholder="Raça:" id="raca">
+                <div id="sEgg"></div>
+            </div>
+            <!-- sexo do animal -->
+            <div class="flexi">
+                <label for="macho">Macho</label>
+                <input type="radio" name="sx" id="macho">
+                <label for="femea">Fêmea</label>
+                <input type="radio" name="sx" id="femea">
+            </div>
+
+            <!-- idade -->
+            <div class="flexi">
+                <input type="date" placeholder="Data de Nascimento" id="dt-nasc">
+                <label for="desc">Desconhecida</label>
+                <input type="radio" name="desc" id="desc">
+            </div>
+
+            <!-- vacina -->
+            <div class="flexi">
+                <label for="vac">Vacinado: </label>
+                <label for="sin">Sim</label>
+                <input type="radio" name="opc" id="sin" onchange="insereCampo()">
+                <label for="nom">Não</label>
+                <input type="radio" name="opc" id="nom">
+                <label for="nnsei">Não sei informar!</label>
+                <input type="radio" name="opc" id="nnsei">
+            </div>
+
+
+            <!-- botão -->
+            <button class="btn" type="submit" onclick="validar()">Enviar</button>
+
+        </form>
+
+        <div class="imgs">
+            <img src="../imagens/imagens-cadpet/grupo4.png" class="imag" width="250" height="" alt="">
+        </div>
+    </div>
+
+
+
+    <footer class="footer-bg">
+        <div class="rodape">
+            <p>Copyright &copy; OSF Development <br> <small>Elaine & Ronald & Vívia</small></p>
+        </div>
+    </footer>
+    <script src="../scripts/cad-pet.js"></script>
+</body>
+
+</html>
