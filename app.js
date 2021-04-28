@@ -3,6 +3,8 @@ const path = require("path")
 const mongoose = require("mongoose")
 require("./modelos/Pet")
 const Pet = mongoose.model("pets")
+require("./modelos/Usuario")
+const Usuario = mongoose.model("usuarios")
 const session = require("express-session")
 const flash = require("connect-flash")
 const app = express()
@@ -78,7 +80,25 @@ app.get('/cadastro-usuario', (req, res) => {
     res.sendFile(__dirname + "/publico/paginas/cad-u.html")
 })
 
-app.get
+app.post('/cadastro-usuario/add', (req, res) => {
+    const dados = req.body
+    console.log(dados)
+    const novoUsuario = {
+        nome: req.body.nome,
+        sobrenome: req.body.sobrenome,
+        cpf: req.body.cpf,
+        sexo: req.body.sexo,
+        email: req.body.email,
+        senha: req.body.senha
+    }
+
+    new Usuario(novoUsuario).save().then(() => {
+        console.log("Usuário cadastrado")
+        res.redirect("/")
+    }).catch(err => {
+        console.log("Erro ao cadastrar usuário: " + err)
+    })
+})
 
 const PORT = process.env.PORT || 3000
 const server = app.listen(PORT, () => {

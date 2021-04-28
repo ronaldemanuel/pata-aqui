@@ -33,17 +33,17 @@
         <div class="tit">
             Cadastre-se
         </div>
-        <form action="" class="form">
-            <input type="text" placeholder="Nome:" id="nome-user" class="input-metade">
-            <input type="text" placeholder="Sobrenome:" id="sobrNome-user" class="input-metade">
-            <input type="text" placeholder="CPF:" id="cpf-user">
+        <form action="/cadastro-usuario/add" class="form" method="POST">
+            <input type="text" placeholder="Nome:" id="nome-user" class="input-metade" name="nome">
+            <input type="text" placeholder="Sobrenome:" id="sobrNome-user" class="input-metade" name="sobrenome">
+            <input type="text" placeholder="CPF:" id="cpf-user" name="cpf">
             <div class="sexo">
                 Sexo:
                 <label for="masc">Masculino</label> 
-                <input type="radio" name="sexo" id="masc">
+                <input type="radio" name="sexo" id="masc" value="masculino">
             
                 <label for="fem">Feminino</label> 
-                <input type="radio" name="sexo" id="fem">
+                <input type="radio" name="sexo" id="fem" value="feminino">
             </div>
             <input type="email" name="email" placeholder="E-mail" id="email">
             <input type="password" name="senha" placeholder="Senha" id="senha">
