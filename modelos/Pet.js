@@ -6,16 +6,9 @@ const Pet = new Schema({
         type: String,
         required: true
     },
-    raca: {
-        trype: String,
-    },
-    sexo: {
-        type: String,
-        required: true
-    },
-    data_nasc: {
-        type: String,
-    },
+    raca: String,
+    sexo: String,
+    data_nasc: String,
     vacinado: {
         type: String,
         required: true

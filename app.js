@@ -53,53 +53,53 @@ app.get('/login', (req, res) => {
     res.sendFile(__dirname + "/publico/paginas/login.html")
 })
 
-app.get('/cadastro-pet', (req, res) => {
-    res.sendFile(__dirname + "/publico/paginas/cad-pet.html")
-})
-
-app.post('/cadastro-pet/add', (req, res) => {
-    const dados = req.body
-    console.log(dados)
-    const novoPet = {
-        nome: req.body.nome,
-        raca: req.body.raca,
-        sexo: req.body.sexo,
-        dt_nasc: req.body.dtNasc,
-        vacinado: req.body.vacinado
-    }
-
-    new Pet(novoPet).save().then(() => {
-        console.log("pet cadastrado")
-        res.redirect("/")
-    }).catch(err => {
-        console.log("Erro ao cadastrar pet: " + err)
+    // Cadastro Pet
+    app.get('/cadastro-pet', (req, res) => {
+        res.sendFile(__dirname + "/publico/paginas/cad-pet.html")
     })
-})
 
-app.get('/cadastro-usuario', (req, res) => {
-    res.sendFile(__dirname + "/publico/paginas/cad-u.html")
-})
+    app.post('/cadastro-pet/add', (req, res) => {
+        const dados = req.body
+        const novoPet = {
+            nome: dados.nome,
+            raca: dados.raca,
+            sexo: dados.sexo,
+            data_nasc: dados.dtNasc,
+            vacinado: dados.vacinado
+        }
 
-app.post('/cadastro-usuario/add', (req, res) => {
-    const dados = req.body
-    console.log(dados)
-    const novoUsuario = {
-        nome: req.body.nome,
-        sobrenome: req.body.sobrenome,
-        cpf: req.body.cpf,
-        sexo: req.body.sexo,
-        email: req.body.email,
-        senha: req.body.senha
-    }
-
-    new Usuario(novoUsuario).save().then(() => {
-        console.log("Usuário cadastrado")
-        res.redirect("/")
-    }).catch(err => {
-        console.log("Erro ao cadastrar usuário: " + err)
+        new Pet(novoPet).save().then(() => {
+            console.log("pet cadastrado")
+            res.redirect("/")
+        }).catch(err => {
+            console.log("Erro ao cadastrar pet: " + err)
+        })
     })
-})
 
+    // Cadastro usuário
+    app.get('/cadastro-usuario', (req, res) => {
+        res.sendFile(__dirname + "/publico/paginas/cad-u.html")
+    })
+    
+    app.post('/cadastro-usuario/add', (req, res) => {
+        const dados = req.body
+        const novoUsuario = {
+            nome: dados.nome,
+            sobrenome: dados.sobrenome,
+            cpf: dados.cpf,
+            sexo: dados.sexo,
+            email: dados.email,
+            senha: dados.senha
+        }
+    
+        new Usuario(novoUsuario).save().then(() => {
+            console.log("Usuário cadastrado")
+            res.redirect("/")
+        }).catch(err => {
+            console.log("Erro ao cadastrar usuário: " + err)
+        })
+    })
+//
 const PORT = process.env.PORT || 3000
 const server = app.listen(PORT, () => {
     console.log("Servidor executando na porta: " + server.address().port)
