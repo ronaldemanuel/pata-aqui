@@ -11,8 +11,6 @@ const Usuario = mongoose.model("usuarios")
 const session = require("express-session")
 const flash = require("connect-flash")
 const app = express()
-const PORT = process.env.PORT || 3000
-const DB_URL = "mongodb+srv://user:pata-aqui@cluster-test.jfpsq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 // CONFIGURAÇÕES
     // Body Parser
@@ -29,7 +27,7 @@ const DB_URL = "mongodb+srv://user:pata-aqui@cluster-test.jfpsq.mongodb.net/myFi
 
     // MongoDB
     mongoose.Promise = global.Promise
-    mongoose.connect(DB_URL, {
+    mongoose.connect("mongodb://localhost/pata_aqui", {
         useNewUrlParser: true,
         useUnifiedTopology: true
     }).then(() => {
@@ -108,6 +106,7 @@ app.get('/login', (req, res) => {
         })
     })
 //
+const PORT = process.env.PORT || 3000
 const server = app.listen(PORT, () => {
     console.log("Servidor executando na porta: " + server.address().port)
 })
