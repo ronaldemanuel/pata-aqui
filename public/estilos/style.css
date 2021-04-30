@@ -6,8 +6,9 @@
 }
 
 /* GERAL */
-body {
+body, html {
     background-color: #fff1e4;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
@@ -15,7 +16,7 @@ body {
 /* CABEÇALHO */
 .header-bg {
     background-color: #dae9e2;
-    height: 140px;
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -73,12 +74,12 @@ nav ul :last-child :hover {
 /*LOGO*/
 .logo {
     margin-left: 50px;
-    width: 18vw;
+    width: 16vw;
     min-width: 200px;
 }
 
 /* RODAPÉ */
-footer {
+.footer-bg {
     background-color:#dae9e2;
     height: 100px;
     display: flex;
@@ -86,7 +87,6 @@ footer {
     align-items: center;
     text-align: center;
     width: 100%;
-
 }
 
 /*RESPONSIVIDADE*/

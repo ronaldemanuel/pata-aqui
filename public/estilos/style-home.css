@@ -27,6 +27,7 @@
     justify-content: center;
     margin: auto;
     width: 80vw;
+    margin-bottom: 5vh;
 }
 
 .pet {
@@ -40,6 +41,8 @@
 .pet img {
     width: 220px;
     height: 220px;
+    border-radius: 45px;
+
 }
 
 /* INFORMAÇÃO DOS PETS */
