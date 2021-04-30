@@ -76,7 +76,7 @@ app.get('/login', (req, res) => {
             nome: dados.nome,
             raca: dados.raca,
             sexo: dados.sexo,
-            data_nasc: dados.dtNasc,
+            idade: dados.idade,
             vacinado: dados.vacinado
         }
 

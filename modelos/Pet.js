@@ -8,7 +8,7 @@ const Pet = new Schema({
     },
     raca: String,
     sexo: String,
-    data_nasc: String,
+    idade: Number,
     vacinado: {
         type: String,
         required: true
