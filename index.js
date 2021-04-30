@@ -1,6 +1,8 @@
 const express = require("express")
 const path = require("path")
 const mongoose = require("mongoose")
+const multer = require("multer")
+const multerConfig = require("./config/multer")
 const handlebars = require("express-handlebars")
 require("./models/Pet")
 const Pet = mongoose.model("pets")
@@ -10,6 +12,7 @@ const session = require("express-session")
 const flash = require("connect-flash")
 const app = express()
 
+// CONFIGURAÇÕES
     // Body Parser
     app.use(express.urlencoded({extended: true}))
     app.use(express.json())
@@ -18,8 +21,9 @@ const app = express()
     app.engine('handlebars', handlebars({defaultLayout: "main"}))
     app.set('view engine', 'handlebars')
 
-    // Caminho público
+    // Caminhos públicos
     app.use(express.static(path.join(__dirname, "public")))
+    app.use("/imagens-pets", express.static("uploads"))
 
     // MongoDB
     mongoose.Promise = global.Promise
@@ -55,14 +59,19 @@ app.get('/login', (req, res) => {
         res.render("pages/cad-pet")
     })
 
-    app.post('/cadastro-pet/add', (req, res) => {
-        const dados = req.body
+    app.post('/cadastro-pet/add', multer(multerConfig).single("imagem"), (req, res) => {
+        const body = req.body
+        const file = req.file
+
         const novoPet = {
-            nome: dados.nome,
-            raca: dados.raca,
-            sexo: dados.sexo,
-            idade: dados.idade,
-            vacinado: dados.vacinado
+            nome: body.nome,
+            raca: body.raca,
+            sexo: body.sexo,
+            idade: body.idade,
+            vacinado: body.vacinado,
+            imgNome: file.originalname,
+            imgSize: file.size,
+            imgKey: file.filename
         }
 
         new Pet(novoPet).save().then(() => {

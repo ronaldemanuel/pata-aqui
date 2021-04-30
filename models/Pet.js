@@ -12,7 +12,10 @@ const Pet = new Schema({
     vacinado: {
         type: String,
         required: true
-    }
+    },
+    imgNome: String,
+    imgSize: Number,
+    imgKey: String
 })
 
 mongoose.model("pets", Pet)

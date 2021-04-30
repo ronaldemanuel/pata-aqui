@@ -5,7 +5,7 @@
     <div class="tit">
         Cadastre o pet
     </div>
-    <form class="form" action="/cadastro-pet/add" method="POST">
+    <form class="form" action="/cadastro-pet/add" method="POST" enctype="multipart/form-data">
         <!-- informações basicas -->
         <div class="formz">
             <input type="text" placeholder="Nome:" id="nome" name="nome">
@@ -41,10 +41,10 @@
         <!-- botão -->
         <button class="btn" type="submit" onclick="validar()">Enviar</button>
 
-    </form>
+        <label class="imgs" for="carrega-img">
+            <img src="../imagens/imagens-cadpet/grupo4.png" class="imag" width="250" height="" alt="">
+        </label>
+        <input type="file" name="imagem" id="carrega-img">
 
-    <label class="imgs" for="carrega-img">
-        <img src="../imagens/imagens-cadpet/grupo4.png" class="imag" width="250" height="" alt="">
-    </label>
-    <input type="file" name="imagem" id="carrega-img">
+    </form>
 </div>

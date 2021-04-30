@@ -9,72 +9,9 @@
 </div>
 <main>
     <div class="list-pets">
-        <div class="pet">
-            <img src="imagens/imagens-index/cachorrim_triste.png" alt="">
-            <div class="text">
-                <h2>Pipoca</h2>
-                <p>3 meses</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/rato.png" alt="">
-            <div class="text">
-                <h2>Cláudio</h2>
-                <p>5 meses</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/cat-orochimara.png" alt="">
-            <div class="text">
-                <h2>Bartolomeu</h2>
-                <p>4 anos</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/cachorro_decepcionado.png" alt="" >
-            <div class="text">
-                <h2>Duarte</h2>
-                <p>7 meses</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/cueio_fotogenico.png" alt="">
-            <div class="text">
-                <h2>Pascal</h2>
-                <p>7 meses</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/blue_bird.png" alt="">
-            <div class="text">
-                <h2>Jeca Calypso</h2>
-                <p>5 anos</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/neko.png" alt="">
-            <div class="text">
-                <h2>Chester</h2>
-                <p>3 anos</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/nami-_a_sereia.png" alt="" >
-            <div class="text">
-                <h2>João Pestana</h2>
-                <p>2 anos</p>
-            </div>
-        </div>
-        <div class="pet">
-            <img src="imagens/imagens-index/eyes_blue.png" alt="">
-            <div class="text">
-                <h2>Adamastor</h2>
-                <p>2 meses</p>
-            </div>
-        </div>
         {{#each pets}}
             <div class="pet">
-                <img src="imagens/imagens-index/eyes_blue.png" alt="">
+                <img src="/imagens-pets/{{imgKey}}" alt="{{imgNome}}" style="border-radius: 45px;">
                 <div class="text">
                     <h2>{{nome}}</h2>
                     <p>{{idade}} anos</p>
