@@ -1,0 +1,28 @@
+{
+  "name": "pata-aqui",
+  "version": "1.0.0",
+  "description": "*Uma atividade da matéria de **Programação Web** que será desenvolvida ao longo da disciplina.*",
+  "main": "index.js",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldemanuel/pata-aqui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldemanuel/pata-aqui/issues"
+  },
+  "homepage": "https://github.com/ronaldemanuel/pata-aqui#readme"
+}

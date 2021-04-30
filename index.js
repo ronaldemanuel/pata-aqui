@@ -2,29 +2,14 @@ const express = require("express")
 const path = require("path")
 const mongoose = require("mongoose")
 const handlebars = require("express-handlebars")
-require("./modelos/Pet")
+require("./models/Pet")
 const Pet = mongoose.model("pets")
-require("./modelos/Usuario")
+require("./models/Usuario")
 const Usuario = mongoose.model("usuarios")
 const session = require("express-session")
 const flash = require("connect-flash")
 const app = express()
 
-// CONFIGURAÇÕES
-    // Sessão
-    app.use(session({
-        secret: "123456",
-        ressave: true,
-        saveUninitialized: true
-    }))    
-    app.use(flash())
-
-    //Midleware
-    app.use((req, res, next) => {
-        res.locals.sucesso_msg = req.flash("sucesso_msg")
-        res.locals.erro_msg = req.flash("erro_msg")
-        next()
-    })
     // Body Parser
     app.use(express.urlencoded({extended: true}))
     app.use(express.json())
@@ -34,7 +19,7 @@ const app = express()
     app.set('view engine', 'handlebars')
 
     // Caminho público
-    app.use(express.static(path.join(__dirname, "publico")))
+    app.use(express.static(path.join(__dirname, "public")))
 
     // MongoDB
     mongoose.Promise = global.Promise
@@ -53,7 +38,7 @@ app.get('/', (req, res) => {
     Pet.find().lean().then(pets => {
         res.render("home", {pets: pets})
     }).catch(err => {
-        req.flash("erro_msg", "Houve um erro ao listar os pets")
+        console.log("Erro ao exibir home: " + err)
     })
 })
 
